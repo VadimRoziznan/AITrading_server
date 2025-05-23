@@ -5,7 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const app = express();
-const port = 8000;
+const port = 8001;
 
 // Путь к файлу с "базой данных"
 const DB_PATH = path.join(__dirname, 'db.json');
@@ -40,7 +40,8 @@ loadUsers();
 // Разрешаем запросы с localhost:3000
 app.use(
   cors({
-    origin: "http://localhost:3000", // Разрешаем запросы только с этого источника
+    origin: "http://89.111.171.123",
+    //origin: "http://localhost:3000", // Разрешаем запросы только с этого источника
     credentials: true, // Разрешаем куки
   })
 );
