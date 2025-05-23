@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Вадим Розизнан",
+      "email": "test@mail.ru",
+      "password": "123",
+      "role": "user"
+    }
+  ]
+}
